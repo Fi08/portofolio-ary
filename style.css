@@ -1,0 +1,1181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family: 'Pathway Gothic One', sans-serif;
+    background-color: rgb(22, 22, 22);
+
+    overflow-x: hidden;
+
+}
+
+nav .name a {
+    text-decoration: none;
+    color: rgb(228, 95, 42);
+}
+
+nav h4 {
+    font-family: 'Caveat', cursive;
+    cursor: pointer;
+    font-size: 1.8em;
+    letter-spacing: 2px;
+    transition: 1s;
+}
+
+nav h4:hover {
+    text-shadow: 0px 0px 10px rgb(228, 95, 42);
+    color: rgb(228, 95, 42);
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    background-color: rgb(22, 22, 22);
+    color: rgb(143, 203, 255);
+    justify-content: space-around;
+    height: 53px;
+    align-items: center;
+    z-index: 99;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 30%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    position: relative;
+    transition: 0.7s;
+    text-decoration: none;
+    color: rgb(95, 148, 194);
+    letter-spacing: 0.7px;
+    height: 20px;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    color: rgb(159, 208, 252);
+
+}
+
+nav ul li a::before {
+    position: absolute;
+    content: "";
+    background-color: rgb(228, 95, 42);
+    height: 2px;
+    width: 0;
+    right: 0;
+    bottom: -5px;
+    transition: 0.3s;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgb(228, 95, 42);
+
+}
+
+nav ul li a:hover::before {
+    width: 100%;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30;
+    height: 33px;
+    cursor: pointer;
+}
+
+
+
+.burger span {
+    display: block;
+    background-color: rgb(143, 203, 255);
+    width: 29px;
+    height: 4px;
+    transition: 0.3s;
+}
+
+.burger span:nth-child(1) {
+    border-radius: 15px 15px 0 0;
+    transform-origin: 0 0;
+}
+
+.burger span:nth-child(2) {
+    width: 25px;
+    margin: 0 auto;
+
+}
+
+.burger span:nth-child(3) {
+    border-radius: 0 0 15px 15px;
+    transform-origin: 0 100%;
+
+}
+
+
+
+/* aksi burger */
+.ubah span:nth-child(1) {
+    transform: rotate(45deg) translate(2px, -1px);
+    border-radius: 0;
+
+
+}
+
+.ubah span:nth-child(2) {
+    position: relative;
+    opacity: 0;
+    left: -10px;
+
+
+}
+
+.ubah span:nth-child(3) {
+    transform: rotate(-45deg) translate(2px, 0);
+    border-radius: 0;
+
+}
+
+/* end aksi burger */
+
+/* SOSIAL */
+.sosial {
+
+    list-style: none;
+    font-size: 2em;
+    background-color: transparent;
+    position: fixed;
+    display: flex;
+    height: 97px;
+    flex-direction: column;
+    z-index: 8;
+    bottom: 10%;
+    right: 23px;
+    justify-content: space-between;
+    transition: 1s;
+}
+
+.sosial a {
+    color: rgb(143, 203, 255);
+    text-decoration: none;
+}
+
+.sosial a:hover {
+    color: rgb(228, 95, 42);
+    text-shadow: 0px 0px 10px rgb(228, 95, 42);
+
+}
+
+.sosial::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    border-radius: 2%;
+    height: 57px;
+    background-color: rgb(143, 203, 255);
+    left: 40%;
+    bottom: -71%;
+}
+
+
+/* HERO */
+.hero {
+    display: flex;
+    padding-top: 100px;
+    background-color: rgb(22, 22, 22);
+    justify-content: space-around;
+    align-content: center;
+    padding-bottom: 50px;
+}
+
+.hero .aset1 {
+    width: 350px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 7px 1px rgb(211, 211, 211);
+
+}
+
+.aset {
+    position: relative;
+
+}
+
+
+.hero .aset:hover::before {
+    box-shadow: -10px -10px 10px -5px rgb(228, 95, 42);
+
+}
+
+.hero .aset:hover::after {
+    box-shadow: 10px 10px 10px -5px rgb(228, 95, 42);
+
+}
+
+.hero .aset::after {
+    content: "";
+    width: 350px;
+    height: 350px;
+    background-color: transparent;
+    position: absolute;
+    border-radius: 100%;
+    box-shadow: 10px 10px 10px -15px rgb(228, 95, 42);
+    top: 7px;
+    left: 7px;
+    transition: 1.3s;
+}
+
+.hero .aset::before {
+    content: "";
+    width: 350px;
+    height: 350px;
+    background-color: transparent;
+    position: absolute;
+    border-radius: 100%;
+    box-shadow: -10px -10px 10px -15px rgb(228, 95, 42);
+    top: -7px;
+    left: -7px;
+    transition: 1.3s;
+}
+
+
+
+.hero .myname {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.3em;
+    color: aliceblue;
+    transition: 1s;
+}
+
+
+
+.hero .myname p {
+    display: none;
+}
+
+.hero .myname .text-1 {
+    font-size: 2.3em;
+    color: aliceblue;
+    margin-top: 10px;
+    letter-spacing: 3.3px;
+    margin-bottom: 10px;
+}
+
+.bungkus {
+    display: inline;
+    position: relative;
+
+}
+
+.hero .myname .cahaya {
+    text-shadow: 0px 0px 13px rgb(228, 95, 42);
+
+}
+
+.ketikan {
+    position: absolute;
+    left: 10px;
+}
+
+
+/* ABOUT */
+.about {
+    background-color: rgb(26, 26, 26);
+    margin-top: 50px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.about .tabout {
+    font-size: 2.3em;
+    display: flex;
+    justify-content: center;
+}
+
+.tabout h4 {
+    color: rgb(143, 203, 255);
+    padding-top: 33px;
+    position: relative;
+    padding-bottom: 33px;
+}
+
+.about .tabout h4::before {
+    content: "";
+    bottom: 33px;
+    left: 53%;
+    border-radius: 5px;
+    width: 81px;
+    height: 44px;
+    background-color: transparent;
+    position: absolute;
+    box-shadow: 10px 10px 10px -5px rgb(228, 95, 42);
+}
+
+.about .tabout h4::after {
+    content: "";
+    bottom: 33px;
+    right: 53%;
+    border-radius: 5px;
+    width: 81px;
+    height: 44px;
+    background-color: transparent;
+    position: absolute;
+    box-shadow: -10px -10px 10px -5px rgb(228, 95, 42);
+}
+
+.about .aboutCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .dabout {
+    font-size: 1.3em;
+    color: aliceblue;
+    width: 373px;
+    line-height: 151%;
+    letter-spacing: 1.3px;
+    text-align: justify;
+    margin-left: 10px;
+}
+
+.about .gabout img {
+    filter: grayscale(100%);
+    width: 300px;
+    margin-right: 10px;
+}
+
+
+.kartuabout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.kartuabout div {
+    background-color: #303030;
+    padding: 10px;
+    width: 180px;
+    border-radius: 10%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.kartuabout .dtabaout {
+    font-size: 1.2em;
+}
+
+.kartusatuan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.kartuabout .detil {
+    font-size: 0.7em;
+}
+
+.kartuabout i {
+    text-shadow: 0px 0px 10px rgb(228, 95, 42);
+    color: rgb(228, 95, 42);
+}
+
+/* Keahlian */
+.keahlian {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: #161616;
+
+
+}
+
+.keahlian .tkeahlian {
+    font-size: 2.3em;
+    display: flex;
+    justify-content: center;
+}
+
+.keahlian .tkeahlian h4 {
+    color: rgb(143, 203, 255);
+    padding-top: 33px;
+    position: relative;
+    padding-bottom: 33px;
+}
+
+.keahlian .tkeahlian h4::after {
+    content: "";
+    top: 50%;
+    left: 107px;
+    border-radius: 5px;
+    width: 50px;
+    height: 5px;
+    background-color: rgb(228, 95, 42);
+    position: absolute;
+    box-shadow: 0px 0px 10px rgb(228, 95, 42);
+}
+
+.keahlian .tkeahlian h4::before {
+    content: "";
+    top: 50%;
+    right: 107px;
+    border-radius: 5px;
+    width: 50px;
+    height: 5px;
+    background-color: rgb(228, 95, 42);
+    position: absolute;
+    box-shadow: 0px 0px 10px rgb(228, 95, 42);
+}
+
+.kartukeahliansatu .text,
+.ktprojek h3 {
+    text-shadow: 0px 0px 13px rgb(228, 95, 42);
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.kartukeahliansatu .text::after {
+    content: 'basic';
+    font-size: 0.5em;
+    bottom: -13px;
+    position: absolute;
+    left: 20px;
+}
+
+
+
+
+/* Keahlian  card*/
+.keahlian .kartukeahlian {
+    font-size: 1.3em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.keahlian .kartukeahlian .kartukeahliansatu {
+    background-color: #303030;
+    padding: 10px;
+    border-radius: 2%;
+    height: 260px;
+    width: 360px;
+    margin-bottom: 20px;
+
+}
+
+.kartukeahliansatu .text {
+    font-size: 1.3em;
+    letter-spacing: 1.3px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.kartukeahliansatu .informasi {
+    padding: 10px;
+}
+
+.kartukeahliansatu .informasi p {
+    margin: 10px;
+    margin-bottom: 13px;
+    font-size: 1em;
+    color: aliceblue;
+    position: relative;
+}
+
+/* EXP BAR */
+.dtkeahliant::after {
+    content: '';
+    left: 110px;
+    bottom: 50%;
+    position: absolute;
+    width: 180px;
+    height: 5px;
+    background-color: rgb(26, 26, 26);
+}
+
+.fill1::before {
+    content: '';
+    left: 110px;
+    bottom: 50%;
+    position: absolute;
+    width: 80px;
+    height: 6px;
+    z-index: 1;
+    background-color: rgb(228, 95, 42);
+    box-shadow: 0px 0px 13px rgb(228, 95, 42);
+}
+
+.fill2::before {
+    content: '';
+    left: 110px;
+    bottom: 50%;
+    position: absolute;
+    width: 80px;
+    height: 6px;
+    z-index: 1;
+    background-color: rgb(228, 95, 42);
+    box-shadow: 0px 0px 13px rgb(228, 95, 42);
+}
+
+.fill3::before {
+    content: '';
+    left: 110px;
+    bottom: 50%;
+    position: absolute;
+    width: 120px;
+    height: 6px;
+    z-index: 1;
+    background-color: rgb(228, 95, 42);
+    box-shadow: 0px 0px 13px rgb(228, 95, 42);
+}
+
+.fill4::before {
+    content: '';
+    left: 110px;
+    bottom: 50%;
+    position: absolute;
+    width: 150px;
+    height: 6px;
+    z-index: 1;
+    background-color: rgb(228, 95, 42);
+    box-shadow: 0px 0px 13px rgb(228, 95, 42);
+}
+
+/* bar kanan */
+.fill5::before {
+    content: '';
+    left: 110px;
+    bottom: 50%;
+    position: absolute;
+    width: 150px;
+    height: 6px;
+    z-index: 1;
+    background-color: rgb(228, 95, 42);
+    box-shadow: 0px 0px 13px rgb(228, 95, 42);
+}
+
+.fill6::before {
+    content: '';
+    left: 110px;
+    bottom: 50%;
+    position: absolute;
+    width: 57px;
+    height: 6px;
+    z-index: 1;
+    background-color: rgb(228, 95, 42);
+    box-shadow: 0px 0px 13px rgb(228, 95, 42);
+}
+
+.fill7::before {
+    content: '';
+    left: 110px;
+    bottom: 50%;
+    position: absolute;
+    width: 40px;
+    height: 6px;
+    z-index: 1;
+    background-color: rgb(228, 95, 42);
+    box-shadow: 0px 0px 13px rgb(228, 95, 42);
+}
+
+.fill8::before {
+    content: '';
+    left: 110px;
+    bottom: 50%;
+    position: absolute;
+    width: 95px;
+    height: 6px;
+    z-index: 1;
+    background-color: rgb(228, 95, 42);
+    box-shadow: 0px 0px 13px rgb(228, 95, 42);
+}
+
+
+/* PROJEK */
+
+
+
+.projek {
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.projek .tprojek {
+    color: rgb(143, 203, 255);
+    padding-top: 33px;
+    padding-bottom: 33px;
+    font-size: 2.3em;
+    position: relative;
+}
+
+.projek .subpen {
+    font-size: 1.8em;
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 10px rgb(228, 95, 42);
+
+}
+
+.projek .tprojek h4::after {
+    content: "";
+    top: 50%;
+    left: 143px;
+    border-radius: 5px;
+    width: 50px;
+    height: 5px;
+    background-color: rgb(228, 95, 42);
+    position: absolute;
+    box-shadow: 0px 0px 10px rgb(228, 95, 42);
+}
+
+.projek .tprojek h4::before {
+    content: "";
+    top: 50%;
+    right: 143px;
+    border-radius: 5px;
+    width: 50px;
+    height: 5px;
+    background-color: rgb(228, 95, 42);
+    position: absolute;
+    box-shadow: 0px 0px 10px rgb(228, 95, 42);
+}
+
+.kartuprojek {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-bottom: 50px;
+}
+
+
+.contprojek {
+    width: 573px;
+    background-color: #303030;
+    border-radius: 2%;
+    margin: 10px 0px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+
+.contprojek:hover {
+    box-shadow: 0px 0px 7px 2px rgb(228, 95, 42);
+}
+
+.contprojek:hover .gprojek img {
+    filter: grayscale(0);
+}
+
+
+
+.pj1,
+.pj2,
+.pj3,
+.pj4,
+.pj5,
+.pj6 {
+
+    height: 100%;
+    width: 100%;
+    right: 0;
+    position: absolute;
+    background-color: rgba(48, 48, 48, 0.9);
+    z-index: 5;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.3em;
+    color: aliceblue;
+}
+
+.allpj h3 {
+    text-shadow: 0px 0px 13px rgb(228, 95, 42);
+    margin-bottom: 20px;
+    color: aliceblue;
+    font-size: 1.5em;
+}
+
+.allpj p {
+    text-align: left;
+    line-height: 25px;
+    margin-left: 23px;
+    margin-bottom: 10px;
+}
+
+.allpj ul {
+    list-style: none;
+    margin-left: 10px;
+}
+
+.gprojek img {
+    height: 300px;
+    width: 100%;
+    padding: 10px;
+    filter: grayscale(50%);
+    transition: 0.3s;
+
+}
+
+.kartuprojek .ktprojek {
+    font-size: 1.3em;
+    color: aliceblue;
+    text-align: center;
+
+}
+
+.pj1 {
+    opacity: 0;
+    transition: 1s;
+
+}
+
+.pj1dts {
+    opacity: 1;
+    transition: 1s;
+
+}
+
+
+.pj2 {
+    opacity: 0;
+    transition: 1s;
+
+}
+
+.pj2dts {
+    opacity: 1;
+    transition: 1s;
+
+}
+
+.pj3 {
+    opacity: 0;
+    transition: 1s;
+
+}
+
+.pj3dts {
+    opacity: 1;
+    transition: 1s;
+
+}
+
+.pj4 {
+    opacity: 0;
+    transition: 1s;
+
+}
+
+.pj4dts {
+    opacity: 1;
+    transition: 1s;
+
+}
+
+.pj5 {
+    opacity: 0;
+    transition: 1s;
+
+}
+
+.pj5dts {
+    opacity: 1;
+    transition: 1s;
+
+}
+
+.pj6 {
+    opacity: 0;
+    transition: 1s;
+
+}
+
+.pj6dts {
+    opacity: 1;
+    transition: 1s;
+
+}
+
+.element {
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 0.9s;
+}
+
+
+/* SERTIFIKAT */
+
+.mysertifikat {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.sertifikat {
+    border-radius: 2%;
+    background-color: #303030;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    margin: 5px 5px;
+}
+
+.sertifikat:hover {
+    box-shadow: 0px 0px 10px rgb(228, 95, 42);
+
+}
+
+.sertifikat img {
+    width: 100%;
+    height: 100%;
+}
+
+/* KONTAK */
+
+.kontak {
+    display: flex;
+    padding-top: 100px;
+    background-color: rgb(22, 22, 22);
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+    width: 100%;
+
+}
+
+.kontak .kontaksaya {
+    display: flex;
+    justify-content: center;
+}
+
+.kontaksaya h4 {
+    color: rgb(143, 203, 255);
+    margin-top: 33px;
+    position: relative;
+    margin-bottom: 33px;
+    font-size: 2.3em;
+}
+
+.kontak .kontaksaya h4::after {
+    content: "";
+    bottom: -10px;
+    left: 143px;
+    border-radius: 5px;
+    width: 50px;
+    height: 5px;
+    background-color: rgb(228, 95, 42);
+    position: absolute;
+    box-shadow: 0px 0px 10px rgb(228, 95, 42);
+}
+
+.kontak .kontaksaya h4::before {
+    content: "";
+    bottom: -10px;
+    right: 143px;
+    border-radius: 5px;
+    width: 50px;
+    height: 5px;
+    background-color: rgb(228, 95, 42);
+    position: absolute;
+    box-shadow: 0px 0px 10px rgb(228, 95, 42);
+}
+
+.hubungin {
+    width: 30%;
+    background-color: #303030;
+    color: aliceblue;
+    font-size: 1.3em;
+    padding: 20px;
+    text-align: center;
+    border-radius: 2%;
+}
+
+.myform {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.hubungin label {
+    margin-right: 30px;
+}
+
+.hubungin input {
+    width: 187px;
+    height: 30px;
+}
+
+.hubungin textarea {
+    width: 255px;
+    height: 80px;
+}
+
+.button {
+    background-color: rgb(143, 203, 255);
+    /* Green */
+    border: none;
+    color: rgb(22, 22, 22);
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 2%;
+    transition: .3s;
+}
+
+.button:hover {
+    background-color: rgb(130, 186, 235);
+}
+
+.button:active {
+    background-color: rgb(100, 145, 184);
+}
+
+/* efek */
+.tampilScroll {
+    position: relative;
+    transform: translateY(0px);
+    opacity: 1;
+    transition: 0.9s;
+}
+
+.displaybutton {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        width: 50%;
+    }
+
+    .hero .aset1 {
+        width: 200px;
+
+    }
+
+    .hero .aset::after {
+        content: "";
+        width: 200px;
+        height: 200px;
+
+    }
+
+    .about .gabout img {
+        width: 199px;
+        margin-right: 17px;
+    }
+
+    .about .dabout {
+        width: 233px;
+    }
+
+    .about .aboutCont {
+        flex-direction: column;
+    }
+
+    .hero .aset::before {
+        content: "";
+        width: 200px;
+        height: 200px;
+    }
+
+    .about .dabout {
+        width: 97%;
+        padding: 15px;
+    }
+
+    .kartukeahlian {
+        flex-direction: column;
+
+    }
+
+    .sosial {
+        bottom: 50%;
+        right: 17px;
+    }
+
+
+    .sosial::after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    .gprojek img {
+
+        filter: grayscale(0);
+    }
+
+    .sertifikat {
+
+        width: 150px;
+        height: 150px;
+
+    }
+
+    .hubungin {
+        width: 90%;
+    }
+
+}
+
+
+@media screen and (max-width: 576px) {
+    nav ul {
+        position: absolute;
+        flex-direction: column;
+        right: 0;
+        top: 0;
+        width: 63%;
+        background-color: rgb(22, 22, 22);
+        z-index: -1;
+        height: 100vh;
+        align-items: center;
+        justify-content: space-evenly;
+        transform: translateY(-100%);
+        opacity: 0;
+        transition: 2s;
+    }
+
+    @keyframes unslider {
+        0% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        100% {
+
+            transform: translateY(-100%);
+            opacity: 0;
+
+        }
+    }
+
+
+    @keyframes slider {
+        0% {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 0.5;
+            transform: translateY(20%);
+        }
+
+        100% {
+            opacity: 0.99;
+            transform: translateY(0);
+        }
+    }
+
+    nav ul.unslide {
+        animation: unslider 1.0s ease forwards;
+    }
+
+    nav ul.slide {
+        animation: slider 1.0s ease forwards;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+
+    /* HERO */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .hero .aset {
+        position: relative;
+        top: -275px;
+    }
+
+    .hero .aset1 {
+        width: 180px;
+
+    }
+
+    .hero .aset::after {
+        content: "";
+        width: 180px;
+        height: 180px;
+
+    }
+
+    .hero .aset::before {
+        content: "";
+        width: 180px;
+        height: 180px;
+    }
+
+
+    .hero .myname {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        color: aliceblue;
+        margin-bottom: 33px;
+        position: relative;
+        top: 250px;
+    }
+
+    .hero .myname p {
+        margin-top: 10px;
+        display: block;
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+
+    .text-1 .bungkus {
+        display: block;
+        height: 60px;
+        left: 27%;
+    }
+
+    /* ABOUT */
+
+    .about .aboutCont {
+        flex-direction: column;
+    }
+
+    .about .gabout img {
+        width: 199px;
+        margin-right: 0px;
+    }
+
+    .about .dabout {
+
+        width: 97%;
+        padding: 15px;
+
+    }
+}
