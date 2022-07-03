@@ -34,14 +34,14 @@ function textAnimasi() {
 setInterval(textAnimasi, 350);
 
 
-// let Mbutton = document.querySelector('.burger');
-// let ul = document.querySelector('ul');
-// Mbutton.addEventListener('click', () => {
-//     Mbutton.classList.toggle("ubah");
-//     ul.classList.toggle("slide");
-//     ul.classList.add("unslide");
+let Mbutton = document.querySelector('.burger');
+let ul = document.querySelector('ul');
+Mbutton.addEventListener('click', () => {
+    Mbutton.classList.toggle("ubah");
+    ul.classList.toggle("slide");
+    ul.classList.add("unslide");
 
-// });
+});
 
 let pj1 = document.querySelector('.pj1');
 
