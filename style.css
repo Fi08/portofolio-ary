@@ -315,7 +315,7 @@ nav ul li a:hover::before {
 .about .tabout h4::before {
     content: "";
     bottom: 33px;
-    left: 53%;
+    left: 43%;
     border-radius: 5px;
     width: 81px;
     height: 44px;
@@ -327,7 +327,7 @@ nav ul li a:hover::before {
 .about .tabout h4::after {
     content: "";
     bottom: 33px;
-    right: 53%;
+    right: 43%;
     border-radius: 5px;
     width: 81px;
     height: 44px;
@@ -421,7 +421,7 @@ nav ul li a:hover::before {
 .keahlian .tkeahlian h4::after {
     content: "";
     top: 50%;
-    left: 107px;
+    left: 67px;
     border-radius: 5px;
     width: 50px;
     height: 5px;
@@ -433,7 +433,7 @@ nav ul li a:hover::before {
 .keahlian .tkeahlian h4::before {
     content: "";
     top: 50%;
-    right: 107px;
+    right: 67px;
     border-radius: 5px;
     width: 50px;
     height: 5px;
@@ -640,7 +640,7 @@ nav ul li a:hover::before {
 .projek .tprojek h4::after {
     content: "";
     top: 50%;
-    left: 143px;
+    left: 117px;
     border-radius: 5px;
     width: 50px;
     height: 5px;
@@ -652,7 +652,7 @@ nav ul li a:hover::before {
 .projek .tprojek h4::before {
     content: "";
     top: 50%;
-    right: 143px;
+    right: 117px;
     border-radius: 5px;
     width: 50px;
     height: 5px;
