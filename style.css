@@ -866,6 +866,7 @@ nav ul li a:hover::before {
     flex-direction: column;
     padding-bottom: 50px;
     width: 100%;
+    padding: 100px;
 
 }
 
@@ -967,6 +968,41 @@ nav ul li a:hover::before {
 .displaybutton {
     display: none;
 }
+
+
+/* FOOTER */
+footer {
+    height: 35px;
+    background-color: rgb(228, 95, 42);
+    color: aliceblue;
+    font-size: 1em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+footer a {
+    text-decoration: none;
+    margin: 3px;
+    color: aliceblue;
+    transition: 0.3s;
+}
+
+footer a:hover {
+
+    color: rgb(143, 203, 255);
+
+}
+
+footer i {
+    transition: 0.3s;
+}
+
+
+
 
 @media screen and (max-width: 768px) {
     nav ul {
