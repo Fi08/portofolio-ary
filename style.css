@@ -866,7 +866,7 @@ nav ul li a:hover::before {
     flex-direction: column;
     padding-bottom: 50px;
     width: 100%;
-    padding: 100px;
+    padding: 100px 30px;
 
 }
 
@@ -908,7 +908,7 @@ nav ul li a:hover::before {
 }
 
 .hubungin {
-    width: 30%;
+    width: 100%;
     background-color: #303030;
     color: aliceblue;
     font-size: 1.3em;
@@ -932,7 +932,7 @@ nav ul li a:hover::before {
 }
 
 .hubungin textarea {
-    width: 255px;
+    width: 200px;
     height: 80px;
 }
 
@@ -1074,9 +1074,10 @@ footer i {
 
     }
 
-    .hubungin {
-        width: 90%;
-    }
+
+
+
+
 
 }
 
@@ -1224,4 +1225,6 @@ footer i {
         padding: 15px;
 
     }
+
+
 }
